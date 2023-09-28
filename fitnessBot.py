@@ -43,7 +43,7 @@ class FitnessBot:
             datetime.timedelta(minutes=self.duration)
         self.start_time = start_datetime.strftime("%H:%M")
         self.end_time = end_datetime.strftime("%H:%M")
-        self.session = Session(webdriver_path='chromedriver.exe',
+        self.session = Session(webdriver_path='./chromedriver.exe',
                                browser='chrome',
                                default_timeout=15,
                                webdriver_options={'arguments': ['headless']})
